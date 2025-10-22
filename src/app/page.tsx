@@ -83,7 +83,7 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
       "14. Rollchain.io General Terms and Conditions apply: https://rollchain.io/doc/general-terms-and-conditions",
     gradient: "from-purple-600 to-pink-600",
     bgGradient: "from-purple-900/90 via-pink-900/80 to-purple-800/90",
-    image: "/banner-provisorio.jpg",
+    image: "/12InstantRakeback_1500x600.jpg",
   },
     {
       id: 2,
@@ -220,9 +220,10 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
                   <Image
                     src={promotions[0].image}
                     alt={promotions[0].title}
-                    width={500}
-                    height={300}
+                    width={1500}
+                    height={600}
                     className="w-full h-auto"
+                    quality={100}
                   />
                 </div>
 
@@ -294,12 +295,13 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
                     {/* Right 2 Columns - Image (Define a altura do card) */}
                     <div className="col-span-2 relative">
                       <Image
-                        src="/banner-provisorio.jpg"
+                        src="/12InstantRakeback_1500x600.jpg"
                         alt="Promotion Banner"
-                        width={800}
-                        height={400}
+                        width={1500}
+                        height={600}
                         className="w-full h-auto block"
                         priority
+                        quality={100}
                       />
                     </div>
                   </div>
@@ -310,7 +312,7 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
         </motion.div>
 
         {/* Grid of Vertical Cards - 3 per row */}
-        <motion.div
+        {/* <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 relative z-10"
           initial="hidden"
           whileInView="visible"
@@ -340,7 +342,7 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
                 <div className="card-border-right"></div>
                 <div className="card-border-bottom"></div>
                 <div className="card-border-left"></div>
-                {/* Header Image Area - Natural Size */}
+                Header Image Area - Natural Size
                 <div className="relative overflow-hidden">
                   <Image
                     src={promotion.image}
@@ -406,7 +408,7 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
               </Card>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
       </div>
       )}
@@ -448,19 +450,12 @@ details: "1. How do I get rewarded with Rollchain Rewards?\n" +
               <Image
                 src={selectedPromotion.image}
                 alt={selectedPromotion.title}
-                width={1200}
-                height={400}
+                width={1500}
+                height={600}
                 className="w-full h-auto"
+                quality={100}
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent hidden md:block"></div>
-              <div className="absolute bottom-0 left-0 right-0 p-8 hidden md:block">
-                <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                  {selectedPromotion.title}
-                </h1>
-                <p className="text-xl text-white/90">
-                  {selectedPromotion.subtitle}
-                </p>
-              </div>
             </div>
           </motion.div>
 
